@@ -30,6 +30,7 @@ Persistence (kalıcılık) riskini tamamen yok etmek amacıyla nükleer seçenek
 - **Sonuç:** 4 saatin sonunda düşman unsurlarından tek bir bit kalmayacak şekilde mimari yeniden inşa edilmiştir.
 
 ---
+© 2026 **NorthForge Systems**. Tüm hakları saklıdır.
 
 ## 📊 Operasyonel Akış Şeması
 
@@ -42,4 +43,4 @@ graph TD
     E --> F[Diskpart Clean: Nükleer İmha]
     F --> G[SİSTEM GÜVENLİ: ZAFER]
 
-© 2026 **NorthForge Systems**. Tüm hakları saklıdır.
+
