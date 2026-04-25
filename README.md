@@ -15,10 +15,7 @@
 - **Tespit:** `netstat -ano` ve `tasklist` üzerinden yapılan derinlemesine analizde, `XSynaptics` zararlısının dış sunucuyla aktif veri eksfiltrasyonu yaptığı saptanmıştır.
 - **İlk Müdahale:** `route add` protokolü kullanılarak saldırganın çıkış yolu "blackhole" yöntemiyle izole edilmiştir.
 
-### 2. Safha: Aktif Karşı-Taarruz (T+13:30)
-Düşmanın veri sızdırma kapasitesini fiziksel seviyede bozmak amacıyla **Bandwidth Saturation** operasyonu yürütülmüştür:
-- **Metot:** MTU sınırlarını zorlayan tam **65,000 Byte** boyutunda ham veri paketleri (Raw UDP) hedef sunucuya yönlendirilmiştir.
-- **Etki:** Saldırgan sunucusu `High I/O Wait` ve `Buffer Overflow` durumuna düşürülerek tünel destabilize edilmiş, veri akışı kesilmiştir.
+### 2. Safha: (13:45) Veri sızıntısını (Exfiltration) durdurmak ve tünel bütünlüğünü bozmak amacıyla, bağlantı noktasına Bant Genişliği Doygunluğu (Bandwidth Saturation) uygulanarak aktif müdahale gerçekleştirilmiştir."
 
 ### 3. Safha: Azerbaycan İttifakı ve Karşı-Mesaj (T+14:45)
 **Azerbaycanlı stratejik müttefikler** ile koordinasyon sağlanarak düşman log dizinlerine müdahale edilmiş ve şu imza enjekte edilmiştir:
