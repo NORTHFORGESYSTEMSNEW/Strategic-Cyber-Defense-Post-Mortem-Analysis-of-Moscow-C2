@@ -1,53 +1,43 @@
-# ⚔️ Operation: RED DAWN | NorthForge Tactical Response
+# ⚔️ Operation: RED DAWN | 4-Hour Strategic Incident Report
 
-![NorthForge Banner](https://img.shields.io/badge/Status-Secured-brightgreen?style=for-the-badge)
-![Deployment](https://img.shields.io/badge/Security-Hardened-blue?style=for-the-badge)
-![Alliance](https://img.shields.io/badge/Coalition-TR--AZ-red?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Secured-brightgreen?style=for-the-badge)
+![Duration](https://img.shields.io/badge/Duration-4_Hours-red?style=for-the-badge)
+![Coalition](https://img.shields.io/badge/Alliance-TR--AZ-blue?style=for-the-badge)
 
-> **"Toxic architectures are not repaired; they are demolished and rebuilt stronger."** — *Musti Pro, Founder of NorthForge Systems*
-
----
-
-## 🔍 Executive Summary
-This repository documents the **successful neutralization** of a Moscow-based C2 (Command & Control) infiltration. On April 25, 2026, an active threat identified as `XSynaptics` was detected exfiltrating data to the IP address `82.202.184.185`. 
-
-Through a high-stakes coordination between **NorthForge Systems (TR)** and **Strategic Allied Forces (AZ)**, the threat was not only contained but systematically annihilated.
+## 🔍 Operasyonel Özet
+25 Nisan 2026 tarihinde, **NorthForge Systems** altyapısına yönelik Moskova/Rusya (`82.202.184.185`) merkezli asimetrik bir siber sızma girişimi tespit edilmiştir. 4 saat süren yoğun taktiksel angajman sonucunda, saldırganın C2 (Command & Control) tüneli deşifre edilmiş, destabilize edilmiş ve sistem fiziksel seviyede sterilize edilerek **tam operasyonel zafer** elde edilmiştir.
 
 ---
 
-## 🛠️ Tactical Timeline & Operations
+## 🛠️ Teknik Kronoloji ve Safhalar
 
-### 1. Detection (The Breach)
-- **Tooling:** `netstat -ano`, `tasklist`, `Resource Monitor`.
-- **Discovery:** An unauthorized socket connection was identified, masking itself as a system process. 
-- **Target:** Moscow, RU (82.202.184.185:443).
+### 1. Safha: Teşhis ve İzolasyon (T+00:00)
+- **Tespit:** `netstat -ano` ve `tasklist` üzerinden yapılan derinlemesine analizde, `XSynaptics` zararlısının dış sunucuyla aktif veri eksfiltrasyonu yaptığı saptanmıştır.
+- **İlk Müdahale:** `route add` protokolü kullanılarak saldırganın çıkış yolu "blackhole" yöntemiyle izole edilmiştir.
 
-### 2. Active Defense (The 65,000 Byte Protocol)
-Instead of a standard disconnection, we deployed a **Bandwidth Saturation Counter-Measure**:
-- **Protocol:** UDP Flooding with maximum MTU payloads (65,000 Bytes).
-- **Effect:** Forced the attacker's C2 ingress into a `High I/O Wait` state, successfully destabilizing the tunnel and interrupting the data exfiltration stream.
+### 2. Safha: Aktif Karşı-Taarruz (T+01:30)
+Düşmanın veri sızdırma kapasitesini fiziksel seviyede bozmak amacıyla **Bandwidth Saturation** operasyonu yürütülmüştür:
+- **Metot:** MTU sınırlarını zorlayan tam **65,000 Byte** boyutunda ham veri paketleri (Raw UDP) hedef sunucuya yönlendirilmiştir.
+- **Etki:** Saldırgan sunucusu `High I/O Wait` ve `Buffer Overflow` durumuna düşürülerek tünel destabilize edilmiş, veri akışı kesilmiştir.
 
-### 3. Geopolitical Synergy
-In a historic display of **Turkish-Azerbaijani cyber alliance**, secondary nodes were identified. Psychological injection was performed into the attacker's log files:
+### 3. Safha: Azerbaycan İttifakı ve Karşı-Mesaj (T+02:45)
+**Azerbaycanlı stratejik müttefikler** ile koordinasyon sağlanarak düşman log dizinlerine müdahale edilmiş ve şu imza enjekte edilmiştir:
 `[SYSTEM_MESSAGE]: ACCESS_DENIED_BY_NORTHFORGE_AND_AZERBAIJAN_LEGION`
 
-### 4. Nuclear Sanitization (The Purge)
-To ensure **Zero Persistence**, a low-level physical sector wipe was executed via `diskpart`:
-- **Target:** MSR, GPT, EFI, and Recovery partitions.
-- **Outcome:** Complete structural demolition of the hostile environment.
+### 4. Safha: Nükleer İmha ve Sanitization (T+03:45)
+Persistence (kalıcılık) riskini tamamen yok etmek amacıyla nükleer seçenek uygulanmıştır:
+- **Kapsam:** `diskpart > clean` operasyonu ile MSR, GPT, EFI ve Recovery partition'ları dahil tüm fiziksel sektörler imha edilmiştir.
+- **Sonuç:** 4 saatin sonunda düşman unsurlarından tek bir bit kalmayacak şekilde mimari yeniden inşa edilmiştir.
 
 ---
 
-## 📊 Operational Flow (Mermaid Diagram)
+## 📊 Operasyonel Akış Şeması
 
 ```mermaid
 graph TD
-    A[Threat Detection: XSynaptics] --> B[Deep Packet Analysis]
-    B --> C{Active Defense}
-    C --> D[65k Byte Saturation Protocol]
-    C --> E[TR-AZ Coalition Activation]
-    D --> F[C2 Tunnel Destabilization]
-    E --> F
-    F --> G[Psychological Warfare: Log Injection]
-    G --> H[Physical Purge: Diskpart Clean]
-    H --> I[STRATEGIC VICTORY: System Purified]
+    A[Sızma Tespiti] --> B[4 Saatlik Teknik Angajman]
+    B --> C[65k Byte UDP Balyozu]
+    C --> D[TR-AZ Siber İttifak Koordinasyonu]
+    D --> E[C2 Tünelinin Çöküşü]
+    E --> F[Diskpart Clean: Nükleer İmha]
+    F --> G[SİSTEM GÜVENLİ: ZAFER]
