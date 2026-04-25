@@ -41,3 +41,5 @@ graph TD
     D --> E[C2 Tünelinin Çöküşü]
     E --> F[Diskpart Clean: Nükleer İmha]
     F --> G[SİSTEM GÜVENLİ: ZAFER]
+
+© 2026 **NorthForge Systems**. Tüm hakları saklıdır.
